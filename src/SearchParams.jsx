@@ -21,8 +21,14 @@ const SearchParams = () => {
   const [adoptedPet] = useContext(AdoptContext);
 
   return (
+<<<<<<< HEAD
     <div className="search-params">
       <form
+=======
+    <div className="my-0 mx-auto w-11/12">
+      <form
+        className="mb-10 flex flex-col items-center justify-center rounded-lg bg-gray-200 p-10 shadow-lg"
+>>>>>>> 63ff20b (chore:for the tailwind)
         onSubmit={(e) => {
           e.preventDefault();
           const formData = new FormData(e.target);
@@ -41,7 +47,17 @@ const SearchParams = () => {
         ) : null}
         <label htmlFor="location">
           Location
+<<<<<<< HEAD
           <input id="location" name="location" placeholder="Location" />
+=======
+          <input
+            id="location"
+            name="location "
+            type="text"
+            className="mb-5 block w-60"
+            placeholder="Location"
+          />
+>>>>>>> 63ff20b (chore:for the tailwind)
         </label>
 
         <label htmlFor="animal">
@@ -51,6 +67,10 @@ const SearchParams = () => {
             value={animal}
             name="animal"
             onChange={(e) => setAnimal(e.target.value)}
+<<<<<<< HEAD
+=======
+            className="mb-5 block w-60"
+>>>>>>> 63ff20b (chore:for the tailwind)
           >
             <option />
             {ANIMALS.map((animal) => (
@@ -63,7 +83,15 @@ const SearchParams = () => {
 
         <label htmlFor="breed">
           Breed
+<<<<<<< HEAD
           <select id="breed" name="breed">
+=======
+          <select
+            id="breed"
+            name="breed"
+            className="mb-5 block w-60 disabled:opacity-50"
+          >
+>>>>>>> 63ff20b (chore:for the tailwind)
             <option />
             {breeds.map((breed) => (
               <option key={breed} value={breed}>
@@ -73,7 +101,13 @@ const SearchParams = () => {
           </select>
         </label>
 
+<<<<<<< HEAD
         <button>Submit</button>
+=======
+        <button className="rounded border-none bg-orange-500 px-6 py-2 text-white hover:opacity-50">
+          Submit
+        </button>
+>>>>>>> 63ff20b (chore:for the tailwind)
       </form>
 
       {/* for pets show */}
